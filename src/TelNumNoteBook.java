@@ -4,7 +4,6 @@ import java.util.Scanner;
 public class TelNumNoteBook {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         //Creating an ArrayList to save new contacts' information
         ArrayList<String> newContact = new ArrayList<>();
 
@@ -25,10 +24,12 @@ public class TelNumNoteBook {
                 String newContactName = scanner.nextLine();
                 System.out.println("Enter the number:");
                 String newContactNumber = scanner.nextLine();
+                //Add the given info about the contacts to the ArrayList
                 newContact.add(newContactName + " " + newContactNumber);
                 System.out.println("The new contact was added successfully \n");
             }
             if (order.equals("2")) {
+                //Write every contact and their number
                 for (String contact : newContact){
                     System.out.println(contact);
                 }

@@ -30,7 +30,7 @@ public class TelNumNoteBook {
             }
             if (order.equals("2")) {
                 for (String contact : newContact){
-                    System.out.println(contact + "\n");
+                    System.out.println(contact);
                 }
             }
             if (order.equals("3")) {
